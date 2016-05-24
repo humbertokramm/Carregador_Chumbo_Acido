@@ -1,0 +1,11 @@
+Added Component: Designator=CN7(Female header  2x19)
+Added Component: Designator=CN10(Female header  2x19)
+Added Pin To Net: NetName=GND Pin=CN7-8
+Added Pin To Net: NetName=GND Pin=CN7-19
+Added Pin To Net: NetName=GND Pin=CN7-20
+Added Pin To Net: NetName=GND Pin=CN7-22
+Added Pin To Net: NetName=GND Pin=CN10-9
+Added Pin To Net: NetName=GND Pin=CN10-20
+Added Member To Class: ClassName=MAIN Member=Component CN7 9
+Added Member To Class: ClassName=MAIN Member=Component CN10 9
+Added Room: Name=Main

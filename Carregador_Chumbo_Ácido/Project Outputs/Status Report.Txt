@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 15:34:34 On 13/05/2016
+
+Output: Export STEP
+Type  : ExportSTEP
+From  : PCB Document [Nucleo Board.PcbDoc]
+   Generated File[Nucleo Board.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 15:34:45 On 13/05/2016

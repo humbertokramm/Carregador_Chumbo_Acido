@@ -1,0 +1,138 @@
+Added Component: Designator=BAT(STLZ 1550 H 02 PIN)
+Added Component: Designator=C1(CAP 0805)
+Added Component: Designator=C2(CAP 0805)
+Added Component: Designator=C3(CAP 0805)
+Added Component: Designator=CN1(5046-03)
+Added Component: Designator=CN5(HEADER 1x10)
+Added Component: Designator=CN6(HEADER 1x8)
+Added Component: Designator=CN8(HEADER 1x6)
+Added Component: Designator=CN9(HEADER 1x8)
+Added Component: Designator=Jumper(RES 0805)
+Added Component: Designator=POWER(STLZ 1550 H 02 PIN)
+Added Component: Designator=R1(RES 0805)
+Added Component: Designator=R2(RES 0805)
+Added Component: Designator=R3(RES 0805)
+Added Component: Designator=R4(RES 0805)
+Added Component: Designator=R5(3006P)
+Added Component: Designator=R6(RES 0805)
+Added Component: Designator=R7(RES 0805)
+Added Component: Designator=R8(RES 0805)
+Added Component: Designator=RL(AXIAL PR01)
+Added Component: Designator=U1(PDIP300-P8)
+Added Component: Designator=U2(TO-220A 90°)
+Added Component: Designator=U62(SOIC-08)
+Added Component: Designator=ZD1(MINI MELF)
+Added Pin To Net: NetName=GND Pin=BAT-1
+Added Pin To Net: NetName=BAT(SENS) Pin=BAT-2
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=+5V Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=+5V Pin=CN1-1
+Added Pin To Net: NetName=A2 Pin=CN1-2
+Added Pin To Net: NetName=GND Pin=CN1-3
+Added Pin To Net: NetName=D8 Pin=CN5-1
+Added Pin To Net: NetName=D9 Pin=CN5-2
+Added Pin To Net: NetName=D10 Pin=CN5-3
+Added Pin To Net: NetName=D11 Pin=CN5-4
+Added Pin To Net: NetName=D12 Pin=CN5-5
+Added Pin To Net: NetName=D13 Pin=CN5-6
+Added Pin To Net: NetName=GND Pin=CN5-7
+Added Pin To Net: NetName=AVDD Pin=CN5-8
+Added Pin To Net: NetName=D14 Pin=CN5-9
+Added Pin To Net: NetName=D15 Pin=CN5-10
+Added Pin To Net: NetName=NC Pin=CN6-1
+Added Pin To Net: NetName=IOREF Pin=CN6-2
+Added Pin To Net: NetName=RESET Pin=CN6-3
+Added Pin To Net: NetName=+3V3 Pin=CN6-4
+Added Pin To Net: NetName=+5V Pin=CN6-5
+Added Pin To Net: NetName=GND Pin=CN6-6
+Added Pin To Net: NetName=GND Pin=CN6-7
+Added Pin To Net: NetName=VIN Pin=CN6-8
+Added Pin To Net: NetName=A0 Pin=CN8-1
+Added Pin To Net: NetName=A1 Pin=CN8-2
+Added Pin To Net: NetName=A2 Pin=CN8-3
+Added Pin To Net: NetName=A3 Pin=CN8-4
+Added Pin To Net: NetName=A4 Pin=CN8-5
+Added Pin To Net: NetName=A5 Pin=CN8-6
+Added Pin To Net: NetName=D0 Pin=CN9-1
+Added Pin To Net: NetName=D1 Pin=CN9-2
+Added Pin To Net: NetName=D2 Pin=CN9-3
+Added Pin To Net: NetName=D3 Pin=CN9-4
+Added Pin To Net: NetName=D4 Pin=CN9-5
+Added Pin To Net: NetName=D5 Pin=CN9-6
+Added Pin To Net: NetName=D6 Pin=CN9-7
+Added Pin To Net: NetName=D7 Pin=CN9-8
+Added Pin To Net: NetName=NetJumper_1 Pin=Jumper-1
+Added Pin To Net: NetName=A1 Pin=Jumper-2
+Added Pin To Net: NetName=GND Pin=POWER-1
+Added Pin To Net: NetName=+17V Pin=POWER-2
+Added Pin To Net: NetName=D13 Pin=R1-1
+Added Pin To Net: NetName=NetC1_2 Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetR3_1 Pin=R4-1
+Added Pin To Net: NetName=NetR2_2 Pin=R4-2
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=GND Pin=R5-2
+Added Pin To Net: NetName=NetR5_3 Pin=R5-3
+Added Pin To Net: NetName=NetJumper_1 Pin=R6-1
+Added Pin To Net: NetName=BAT Pin=R6-2
+Added Pin To Net: NetName=GND Pin=R7-1
+Added Pin To Net: NetName=NetJumper_1 Pin=R7-2
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=A2 Pin=R8-2
+Added Pin To Net: NetName=NetR3_2 Pin=RL-1
+Added Pin To Net: NetName=BAT Pin=RL-2
+Added Pin To Net: NetName=NetR5_3 Pin=U1-1
+Added Pin To Net: NetName=NetR2_2 Pin=U1-2
+Added Pin To Net: NetName=NetC1_2 Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=NetR5_1 Pin=U1-5
+Added Pin To Net: NetName=NetR3_1 Pin=U1-6
+Added Pin To Net: NetName=+17V Pin=U1-7
+Added Pin To Net: NetName=NetR3_1 Pin=U2-1
+Added Pin To Net: NetName=NetR3_2 Pin=U2-2
+Added Pin To Net: NetName=NetR3_2 Pin=U2-2
+Added Pin To Net: NetName=NetR3_2 Pin=U2-2
+Added Pin To Net: NetName=+17V Pin=U2-3
+Added Pin To Net: NetName=BAT Pin=U62-1
+Added Pin To Net: NetName=BAT Pin=U62-2
+Added Pin To Net: NetName=BAT(SENS) Pin=U62-3
+Added Pin To Net: NetName=BAT(SENS) Pin=U62-4
+Added Pin To Net: NetName=GND Pin=U62-5
+Added Pin To Net: NetName=A0 Pin=U62-7
+Added Pin To Net: NetName=+5V Pin=U62-8
+Added Pin To Net: NetName=GND Pin=ZD1-1
+Added Pin To Net: NetName=NetJumper_1 Pin=ZD1-2
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=U62-6
+Added Net: Name=NetC3_1
+Added Member To Class: ClassName=MAIN Member=Component BAT STLZ 1550
+Added Member To Class: ClassName=MAIN Member=Component C1 Cap.Cer. 100nF/50V SMD
+Added Member To Class: ClassName=MAIN Member=Component C2 Cap.Cer. 100nF/50V SMD
+Added Member To Class: ClassName=MAIN Member=Component C3 Cap.Cer. 100nF/50V SMD
+Added Member To Class: ClassName=MAIN Member=Component CN1 5046-03
+Added Member To Class: ClassName=MAIN Member=Component CN5 Header 1X10
+Added Member To Class: ClassName=MAIN Member=Component CN6 Header 1X8
+Added Member To Class: ClassName=MAIN Member=Component CN8 Header 1X6
+Added Member To Class: ClassName=MAIN Member=Component CN9 Header 1X8
+Added Member To Class: ClassName=MAIN Member=Component Jumper Res 0R SMD
+Added Member To Class: ClassName=MAIN Member=Component POWER STLZ 1550
+Added Member To Class: ClassName=MAIN Member=Component R1 Res 2M SMD
+Added Member To Class: ClassName=MAIN Member=Component R2 Res 2K2 SMD
+Added Member To Class: ClassName=MAIN Member=Component R3 Res 330R SMD
+Added Member To Class: ClassName=MAIN Member=Component R4 Res 2K2 SMD
+Added Member To Class: ClassName=MAIN Member=Component R5 Trimpot
+Added Member To Class: ClassName=MAIN Member=Component R6 Res 22K SMD
+Added Member To Class: ClassName=MAIN Member=Component R7 Res 5K6 SMD
+Added Member To Class: ClassName=MAIN Member=Component R8 Res 100R SMD
+Added Member To Class: ClassName=MAIN Member=Component RL Res 470K / 1W
+Added Member To Class: ClassName=MAIN Member=Component U1 UA741CN
+Added Member To Class: ClassName=MAIN Member=Component U2 LM317
+Added Member To Class: ClassName=MAIN Member=Component U62 ACS712 -05
+Added Member To Class: ClassName=MAIN Member=Component ZD1 Diode Zener
+Added Room: Name=Main

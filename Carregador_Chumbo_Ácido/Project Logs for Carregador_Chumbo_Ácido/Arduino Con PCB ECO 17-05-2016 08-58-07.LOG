@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=NetR3_1 Pin=R4-1
+Removed Pin From Net: NetName=NetR2_2 Pin=R4-2
+Removed Pin From Net: NetName=BAT Pin=RL-2
+Removed Member From Class: ClassName=MAIN Member=RL
+Change Component DesignItemId : Designator=R2 Old DesignItemId=Res 2K2 SMD New DesignItemId=Res 1K SMD
+Change Component DesignItemId : Designator=R4 Old DesignItemId=Res 2K2 SMD New DesignItemId=Res 3K3 SMD
+Change Component Comment : Designator=R2 Old Comment=Res 2K2 SMD New Comment=Res 1K SMD
+Change Component Comment : Designator=R4 Old Comment=Res 2K2 SMD New Comment=Res 3K3 SMD
+Added Component: Designator=D1(DO-201AD)
+Added Pin To Net: NetName=BAT Pin=D1-2
+Added Pin To Net: NetName=NetR2_2 Pin=R4-1
+Added Pin To Net: NetName=NetR3_1 Pin=R4-2
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=R3-2
+Added Pin To Net: NetName=NetD1_1 Pin=U2-2
+Added Pin To Net: NetName=NetD1_1 Pin=U2-2
+Added Pin To Net: NetName=NetD1_1 Pin=U2-2
+Added Net: Name=NetD1_1
+Added Member To Class: ClassName=MAIN Member=Component D1 Diode 1N5404

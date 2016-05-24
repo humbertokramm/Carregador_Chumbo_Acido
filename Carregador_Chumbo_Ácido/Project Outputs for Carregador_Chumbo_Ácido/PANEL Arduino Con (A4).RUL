@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: C:\Users\hkramm\Google Drive\Aula\Circuitos Microprocessados\Trabalho Gb\Carregador_Chumbo_Ácido\PANEL Arduino Con (A4).PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=15.75
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=15.75
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

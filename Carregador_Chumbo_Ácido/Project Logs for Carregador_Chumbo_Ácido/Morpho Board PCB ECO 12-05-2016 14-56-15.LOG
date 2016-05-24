@@ -1,0 +1,77 @@
+Removed Pin From Net: NetName=GND Pin=CN7-8
+Removed Pin From Net: NetName=GND Pin=CN7-19
+Removed Pin From Net: NetName=GND Pin=CN7-20
+Removed Pin From Net: NetName=GND Pin=CN7-22
+Removed Pin From Net: NetName=GND Pin=CN10-9
+Removed Pin From Net: NetName=GND Pin=CN10-20
+Removed Member From Class: ClassName=MAIN Member=CN7
+Removed Member From Class: ClassName=MAIN Member=CN10
+Added Component: Designator=CN5(HEADER 1x10)
+Added Component: Designator=CN6(HEADER 1x8)
+Added Component: Designator=CN8(HEADER 1x6)
+Added Component: Designator=CN9(HEADER 1x8)
+Added Pin To Net: NetName=GND Pin=CN5-7
+Added Pin To Net: NetName=GND Pin=CN6-6
+Added Pin To Net: NetName=GND Pin=CN6-7
+Added Pin To Net: NetName=+3V3 Pin=CN6-4
+Added Net: Name=+3V3
+Added Pin To Net: NetName=+5V Pin=CN6-5
+Added Net: Name=+5V
+Added Pin To Net: NetName=A0 Pin=CN8-1
+Added Net: Name=A0
+Added Pin To Net: NetName=A1 Pin=CN8-2
+Added Net: Name=A1
+Added Pin To Net: NetName=A2 Pin=CN8-3
+Added Net: Name=A2
+Added Pin To Net: NetName=A3 Pin=CN8-4
+Added Net: Name=A3
+Added Pin To Net: NetName=A4 Pin=CN8-5
+Added Net: Name=A4
+Added Pin To Net: NetName=A5 Pin=CN8-6
+Added Net: Name=A5
+Added Pin To Net: NetName=AVDD Pin=CN5-8
+Added Net: Name=AVDD
+Added Pin To Net: NetName=D0 Pin=CN9-1
+Added Net: Name=D0
+Added Pin To Net: NetName=D1 Pin=CN9-2
+Added Net: Name=D1
+Added Pin To Net: NetName=D2 Pin=CN9-3
+Added Net: Name=D2
+Added Pin To Net: NetName=D3 Pin=CN9-4
+Added Net: Name=D3
+Added Pin To Net: NetName=D4 Pin=CN9-5
+Added Net: Name=D4
+Added Pin To Net: NetName=D5 Pin=CN9-6
+Added Net: Name=D5
+Added Pin To Net: NetName=D6 Pin=CN9-7
+Added Net: Name=D6
+Added Pin To Net: NetName=D7 Pin=CN9-8
+Added Net: Name=D7
+Added Pin To Net: NetName=D8 Pin=CN5-1
+Added Net: Name=D8
+Added Pin To Net: NetName=D9 Pin=CN5-2
+Added Net: Name=D9
+Added Pin To Net: NetName=D10 Pin=CN5-3
+Added Net: Name=D10
+Added Pin To Net: NetName=D11 Pin=CN5-4
+Added Net: Name=D11
+Added Pin To Net: NetName=D12 Pin=CN5-5
+Added Net: Name=D12
+Added Pin To Net: NetName=D13 Pin=CN5-6
+Added Net: Name=D13
+Added Pin To Net: NetName=D14 Pin=CN5-9
+Added Net: Name=D14
+Added Pin To Net: NetName=D15 Pin=CN5-10
+Added Net: Name=D15
+Added Pin To Net: NetName=IOREF Pin=CN6-2
+Added Net: Name=IOREF
+Added Pin To Net: NetName=NC Pin=CN6-1
+Added Net: Name=NC
+Added Pin To Net: NetName=RESET Pin=CN6-3
+Added Net: Name=RESET
+Added Pin To Net: NetName=VIN Pin=CN6-8
+Added Net: Name=VIN
+Added Member To Class: ClassName=MAIN Member=Component CN5 Header 1X10
+Added Member To Class: ClassName=MAIN Member=Component CN6 Header 1X8
+Added Member To Class: ClassName=MAIN Member=Component CN8 Header 1X6
+Added Member To Class: ClassName=MAIN Member=Component CN9 Header 1X8

@@ -1,0 +1,32 @@
+Source PCB Design PANEL Arduino Con (A4).PcbDoc contains embedded board array. It is recomended to generate individual BOM for each embedded board PCB design.
+
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Carregador_Chumbo_Ácido.PrjPcb]
+   Generated File[PANEL Arduino Con (A4).GTL]
+   Generated File[PANEL Arduino Con (A4).GBL]
+   Generated File[PANEL Arduino Con (A4).GPB]
+   Generated File[PANEL Arduino Con (A4).GPT]
+   Generated File[PANEL Arduino Con (A4).GTO]
+   Generated File[PANEL Arduino Con (A4).GTP]
+   Generated File[PANEL Arduino Con (A4).GTS]
+   Generated File[PANEL Arduino Con (A4).GBS]
+   Generated File[PANEL Arduino Con (A4).GBP]
+   Generated File[PANEL Arduino Con (A4).GBO]
+   Generated File[PANEL Arduino Con (A4).GKO]
+   Generated File[PANEL Arduino Con (A4).GM1]
+   Generated File[PANEL Arduino Con (A4).GM4]
+   Generated File[PANEL Arduino Con (A4).GM16]
+   Generated File[PANEL Arduino Con (A4).GM13]
+   Generated File[PANEL Arduino Con (A4).GM15]
+   Generated File[PANEL Arduino Con (A4).GD1]
+   Generated File[PANEL Arduino Con (A4).GG1]
+   Generated File[PANEL Arduino Con (A4).RUL]
+   Generated File[PANEL Arduino Con (A4).EXTREP]
+   Generated File[PANEL Arduino Con (A4).REP]
+
+
+Files Generated   : 21
+Documents Printed : 0
+
+Finished Output Generation At 09:24:45 On 17/05/2016

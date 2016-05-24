@@ -1,0 +1,349 @@
+*************************************************************
+FileName = PANEL Arduino Con (A4).GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Layer
+      File : PANEL Arduino Con (A4).GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : PANEL Arduino Con (A4).GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : PANEL Arduino Con (A4).GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : PANEL Arduino Con (A4).GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : PANEL Arduino Con (A4).GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D35
+    D36
+    D37
+    D38
+    D39
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : PANEL Arduino Con (A4).GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : PANEL Arduino Con (A4).GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : PANEL Arduino Con (A4).GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : PANEL Arduino Con (A4).GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : PANEL Arduino Con (A4).GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D19
+    D36
+    D37
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : PANEL Arduino Con (A4).GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : PANEL Arduino Con (A4).GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 4
+      File : PANEL Arduino Con (A4).GM4
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 16
+      File : PANEL Arduino Con (A4).GM16
+
+    Adding Layer      : Mechanical 16
+
+
+Used DCodes :
+    D37
+    D38
+    D62
+    D63
+    D64
+    D65
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : PANEL Arduino Con (A4).GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : PANEL Arduino Con (A4).GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D35
+    D66
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : PANEL Arduino Con (A4).GD1
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D67
+    D68
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : PANEL Arduino Con (A4).GG1
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D67
+*************************************************************
+

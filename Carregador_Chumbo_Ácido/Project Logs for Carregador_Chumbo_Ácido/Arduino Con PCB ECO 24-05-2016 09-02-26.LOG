@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=A0 Pin=U3-7
+Added Component: Designator=R9(RES 0805)
+Added Component: Designator=ZD2(MINI MELF)
+Added Pin To Net: NetName=A0 Pin=R9-2
+Added Pin To Net: NetName=GND Pin=ZD2-1
+Added Pin To Net: NetName=A0 Pin=ZD2-2
+Added Pin To Net: NetName=NetR9_1 Pin=R9-1
+Added Pin To Net: NetName=NetR9_1 Pin=U3-7
+Added Net: Name=NetR9_1
+Added Member To Class: ClassName=MAIN Member=Component R9 Res 330R SMD
+Added Member To Class: ClassName=MAIN Member=Component ZD2 Diode Zener

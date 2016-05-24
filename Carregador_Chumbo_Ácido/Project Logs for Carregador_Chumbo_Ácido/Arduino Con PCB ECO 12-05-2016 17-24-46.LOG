@@ -1,0 +1,7 @@
+Added Component: Designator=U2(TO-220A 90°)
+Added Pin To Net: NetName=NetR3_1 Pin=U2-1
+Added Pin To Net: NetName=NetR3_2 Pin=U2-2
+Added Pin To Net: NetName=NetR3_2 Pin=U2-2
+Added Pin To Net: NetName=NetR3_2 Pin=U2-2
+Added Pin To Net: NetName=+17V Pin=U2-3
+Added Member To Class: ClassName=MAIN Member=Component U2 LM317

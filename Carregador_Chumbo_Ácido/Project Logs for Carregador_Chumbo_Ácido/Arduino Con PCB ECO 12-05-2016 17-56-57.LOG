@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=A1 Pin=CN8-2
+Added Component: Designator=Jumper(RES 0805)
+Added Pin To Net: NetName=A1 Pin=Jumper-1
+Change Net Name : Old Net Name=A1 New Net Name=NetJumper_1
+Added Pin To Net: NetName=A1 Pin=CN8-2
+Added Pin To Net: NetName=A1 Pin=Jumper-2
+Added Net: Name=A1
+Added Member To Class: ClassName=MAIN Member=Component Jumper Res 0R SMD
