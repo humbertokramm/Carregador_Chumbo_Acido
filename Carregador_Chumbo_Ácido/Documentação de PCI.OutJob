@@ -241,18 +241,18 @@ Configuration11_Name1=OutputConfigurationParameter1
 Configuration11_Item1=Record=Pcb3DPrintView|ResX=300|ResY=300|ViewX=66410883|ViewY=32440547|LookAtX=87795400|LookAtY=64532772|LookAtZ=2618453.75|QuatX=-0.230607897043228|QuatY=0.0829388648271561|QuatZ=-0.106352485716343|QuatW=0.963654637336731|Zoom=2.22252727762989E-5|UnitsPercent=True|UnitsDPI=True|LockResAspect=True|ViewConfigType=.config_3d|CustomCamera=True|ViewFromTop=True|ViewConfig=
 
 [PublishSettings]
-OutputFilePath2=C:\Users\hkramm\Google Drive\Aula\Circuitos Microprocessados\Trabalho Gb\Carregador_Chumbo_Ácido\Project Outputs for Carregador_Chumbo_Ácido\Carregador_Chumbo_Ácido\Carregador_Chumbo_Ácido.PDF
-ReleaseManaged2=1
-OutputBasePath2=Project Outputs for Carregador_Chumbo_Ácido
-OutputPathMedia2==ProjectName
+OutputFilePath2=C:\Users\hkramm\Google Drive\Aula\Circuitos Microprocessados\Trabalho Gb\Carregador_Chumbo_Ácido\..\Carregador_Chumbo_Ácido.PDF
+ReleaseManaged2=0
+OutputBasePath2=..\
+OutputPathMedia2=
 OutputPathMediaValue2==ProjectName
 OutputPathOutputer2=[Output Type]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
-OutputFileName2=Documentação de PCI.PDF
+OutputFileName2=Esquemático
 OutputFileNameMulti2=
 UseOutputNameForMulti2=0
-OutputFileNameSpecial2==ProjectName
+OutputFileNameSpecial2=
 OpenOutput2=1
 PromptOverwrite2=1
 PublishMethod2=0
@@ -294,7 +294,7 @@ OutputFileNameSpecial4=
 OpenOutput4=1
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=C:\Users\hkramm\Google Drive\Aula\Circuitos Microprocessados\Trabalho Gb\Carregador_Chumbo_Ácido\Project Outputs for Carregador_Chumbo_Ácido\Carregador_Chumbo_Ácido\Carregador_Chumbo_Ácido.PDF
+RelativeOutputPath2=C:\Users\hkramm\Google Drive\Aula\Circuitos Microprocessados\Trabalho Gb\Carregador_Chumbo_Ácido\..\Carregador_Chumbo_Ácido.PDF
 OpenOutputs2=1
 RelativeOutputPath3=U:\PCP\Sub-Produto\P-PCI GSA-025\
 OpenOutputs3=1

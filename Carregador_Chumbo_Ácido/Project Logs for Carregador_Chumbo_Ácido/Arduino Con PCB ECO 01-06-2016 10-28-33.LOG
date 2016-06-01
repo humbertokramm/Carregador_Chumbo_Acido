@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GND Pin=R8-1
+Removed Pin From Net: NetName=A2 Pin=R8-2
+Removed Member From Class: ClassName=MAIN Member=R8
+Added Component: Designator=C8(CAP 0805)
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=A2 Pin=C8-2
+Added Member To Class: ClassName=MAIN Member=Component C8 Cap.Cer. 100nF/50V SMD
