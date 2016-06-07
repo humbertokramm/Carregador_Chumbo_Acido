@@ -81,6 +81,28 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef *htim)
   HAL_NVIC_EnableIRQ(TIM3_IRQn);
 }
 
+void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef *htim)
+{
+	GPIO_InitTypeDef   GPIO_InitStruct;
+
+	/* Habilita o clock do Timer 3*/
+    //__TIM3_CLK_ENABLE();
+    __TIM16_CLK_ENABLE();
+
+    /* Habilita o Clock no port C,  função definida em stm32f0xx_hal_rcc.h*/
+    __GPIOB_CLK_ENABLE();
+
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull = GPIO_PULLUP;
+    GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
+
+    GPIO_InitStruct.Alternate = GPIO_AF2_TIM16;
+    //GPIO_InitStruct.Pin = GPIO_PIN_4 | GPIO_PIN_5;
+    GPIO_InitStruct.Pin = GPIO_PIN_8;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+
+}
 
 /**
   * @}

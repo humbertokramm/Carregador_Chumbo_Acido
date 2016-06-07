@@ -14,9 +14,13 @@ Exemplo  - ADC
 #include <HD44780LIB.h>
 
 
+#define  PERIOD_VALUE       (uint32_t)(1000 - 1)  /* Period Value  */
+#define  PULSE1_VALUE       (uint32_t)(PERIOD_VALUE/2)        /* Capture Compare 1 Value  */
+#define  PULSE2_VALUE       (uint32_t)(PERIOD_VALUE*37.5/100) /* Capture Compare 2 Value  */
+
 /* Struct definida em  stm32f0xx_hal_tim.h para configrar o timer*/
 TIM_HandleTypeDef    TimHandle;
-
+TIM_HandleTypeDef	TimHandlePwm;
 /* Struct de configuração da comunicação serial definido em  stm32f0xx_hal_uart.h*/
 UART_HandleTypeDef UartHandle;
 
@@ -29,12 +33,17 @@ ADC_HandleTypeDef    AdcHandle;
 /* ADC channel configuration structure declaration */
 ADC_ChannelConfTypeDef   sConfig;
 
+/* Struct de configuração da saida do Timer */
+TIM_OC_InitTypeDef sConfigPwm;
 
 /* Struct definida em  stm32f0xx_hal_tim.h para configrar o timer*/
 TIM_HandleTypeDef    TimHandle;
 
 /* Declaração da variável Prescaler */
 uint32_t uwPrescalerValue = 0;
+
+/* Variavel de confguração do prescaler */
+//uint32_t uhPrescalerValue = 0;
 
 /* Buffer de Transmissão  */
 uint8_t Buffer[50] = "\n **** Exemplo de ADC ****\n\r ";
@@ -44,7 +53,7 @@ uint32_t g_ADCValue2;
 uint32_t g_ADCValue3;
 uint32_t g_Flag;
 
-#define ZERO_AMP	2440
+#define ZERO_AMP	3040
 float g_ConvAmp;
 float g_ConvVolt;
 float g_ConvTemp;
@@ -57,6 +66,8 @@ void sendSerial(uint8_t *pData);
 char readSerial();
 void limpaTela(uint8_t n);
 void ConcatFloat(float value, uint8_t *pData, uint8_t nCasas);
+void pwmConfig();
+void pwmByPercent(uint8_t percent,uint32_t channel);
 
 int main(void)
 {
@@ -219,6 +230,7 @@ int main(void)
 	HAL_UART_Transmit(&UartHandle, (uint8_t*)Buffer, 50, 100);
 
 
+	pwmConfig();
 	/* Infinite Loop */
 	while (1)
 	{
@@ -234,7 +246,7 @@ int main(void)
 				// Converte ADC para Corrente
 				//g_ConvAmp = (float)((g_ADCValue1/* - 3103 */) * (3.3/4096) *5);
 				if(g_ADCValue1 < ZERO_AMP) g_ConvAmp = 0;
-				else g_ConvAmp = (float)((g_ADCValue1 - ZERO_AMP) * (3.3/4096) *5);
+				else g_ConvAmp = (float)((g_ADCValue1 - ZERO_AMP) *0.005);
 
 				HAL_Delay(10);
 			}
@@ -244,8 +256,8 @@ int main(void)
 			{
 				// Leitura da Tensão
 				g_ADCValue2 = HAL_ADC_GetValue(&AdcHandle);
-				// Tensão da Bateria, Razão do divisor de tensão 3,93
-				g_ConvVolt = (float)(g_ADCValue2 * (3.3/4096) * 6.8);
+				// Tensão da Bateria, Razão do divisor de tensão
+				g_ConvVolt = (float)(g_ADCValue2 * (3.3/4096) *( (22+5.6)/5.6 ) );
 
 				HAL_Delay(10);
 			}
@@ -265,7 +277,7 @@ int main(void)
 			//Transmissão de dados
 			{
 				//Limpa a Tela
-				limpaTela(8);
+				limpaTela(18);
 
 				//Inicializa a tela de Status
 				strcpy(statusString,"Leitura do Sistema:\r\n");
@@ -275,15 +287,20 @@ int main(void)
 				ConcatFloat(g_ConvAmp, statusString, 2);
 				strcat(statusString,"A\r\n");
 
+				//Concatena Valores de Corrente
+				strcat(statusString,"ADC CORRENTE:\t");
+				ConcatFloat(g_ADCValue1, statusString, 0);
+				strcat(statusString,"\r\n");
+
 				//Concatena Valores de Tensão
-				strcat(statusString,"Tensão:\t");
+				strcat(statusString,"Tensao:\t");
 				ConcatFloat(g_ConvVolt, statusString, 2);
 				strcat(statusString,"V\r\n");
 
 				//Concatena Valores de Temperatura
 				strcat(statusString,"Temp:\t");
 				ConcatFloat(g_ConvTemp, statusString, 2);
-				strcat(statusString,"°C\r\n");
+				strcat(statusString,"oC\r\n");
 
 				//Imprime na Serial
 				sendSerial((uint8_t*)statusString);
@@ -367,18 +384,86 @@ void limpaTela(uint8_t n)
 void ConcatFloat(float value, uint8_t *pData, uint8_t nCasas)
 {
 	uint8_t tString[30];
-	uint8_t base = 1,j;
+	uint16_t base = 1,j;
+	float lsbValue;
 
 	for(j=0;j<nCasas;j++) base *= 10;
 
 	itoa((int)value,tString,10);
 	strcat(pData,tString);
-	if(base>1)
+
+	lsbValue = (value - (int)value)*base;
+
+	if(nCasas > 0)
 	{
 		strcat(pData,".");
-		itoa((value - (int)value)*base, (uint8_t*)tString, 10);
+
+		for(nCasas ; nCasas > 1 ; nCasas-- )
+		{
+			base = base/10;
+			if((int)lsbValue < base) strcat(pData,"0");
+		}
+		itoa((int)lsbValue, (uint8_t*)tString, 10);
 		strcat(pData,tString);
 	}
 
+}
+/******************************************************************************/
+
+/******************************************************************************/
+void pwmConfig()
+{
+	/* Compute the prescaler value to have TIM3 counter clock equal to 16000000 Hz */
+	uwPrescalerValue = (uint32_t)(SystemCoreClock / 1000000) - 1;
+
+
+	/* Configuração  do periférico TIM3 como PWM
+		+ Prescaler = (SystemCoreClock / 16000000) - 1
+		+ Period = (666 - 1)
+		+ ClockDivision = 0
+		+ Counter direction = Up
+	*/
+	//TimHandle.Instance = TIM3;
+	TimHandlePwm.Instance = TIM16;
+
+	TimHandlePwm.Init.Prescaler         = uwPrescalerValue;
+	TimHandlePwm.Init.Period            = PERIOD_VALUE;
+	TimHandlePwm.Init.ClockDivision     = 0;
+	TimHandlePwm.Init.CounterMode       = TIM_COUNTERMODE_UP;
+	TimHandlePwm.Init.RepetitionCounter = 0;
+	HAL_TIM_PWM_Init(&TimHandlePwm);
+
+
+	/* Configure the PWM channels*/
+	sConfigPwm.OCMode       = TIM_OCMODE_PWM1;
+	sConfigPwm.OCPolarity   = TIM_OCPOLARITY_HIGH;
+	sConfigPwm.OCFastMode   = TIM_OCFAST_DISABLE;
+	sConfigPwm.OCNPolarity  = TIM_OCNPOLARITY_HIGH;
+	sConfigPwm.OCIdleState  = TIM_OCIDLESTATE_RESET;
+	sConfigPwm.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+
+	//TIM3
+	/* Set the pulse value for channel 1  PB4*/
+	//pwmByPercent(DutyControl[0],TIM_CHANNEL_1);
+	/* Set the pulse value for channel 2 PB5 - pag 34 doc DM00088500.pdf*/
+	//pwmByPercent(DutyControl[1],TIM_CHANNEL_2);
+
+	//TIM15
+	/* Set the pulse value for channel 1  PB8*/
+	sConfigPwm.Pulse = 500;
+
+	HAL_TIM_PWM_ConfigChannel(&TimHandlePwm, &sConfigPwm, TIM_CHANNEL_1);
+	HAL_TIM_PWM_Start(&TimHandlePwm, TIM_CHANNEL_1);
+
+
+	//pwmByPercent(DutyControl[0],TIM_CHANNEL_1);
+}
+/******************************************************************************/
+void pwmByPercent(uint8_t percent,uint32_t channel)
+{
+	sConfigPwm.Pulse = (PERIOD_VALUE+1)*percent/100;
+
+	HAL_TIM_PWM_ConfigChannel(&TimHandlePwm, &sConfigPwm, channel);
+	HAL_TIM_PWM_Start(&TimHandlePwm, channel);
 }
 /******************************************************************************/
