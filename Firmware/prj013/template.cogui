@@ -22,7 +22,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/hkramm/Google Drive/Aula/Circuitos Microprocessados/Trabalho Gb/Firmware/prj013/src/main.c" title="main.c" tooltip="C:/Users/hkramm/Google Drive/Aula/Circuitos Microprocessados/Trabalho Gb/Firmware/prj013/src/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/template/src/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12127" selectionTopPixel="5666"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12157" selectionTopPixel="5226"/>
 </editor>
 </editors>
 <views>
@@ -32,20 +32,7 @@
 </viewState>
 </view>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
-<expanded>
-<element path="/template"/>
-<element path="/template/bootloader"/>
-<element path="/template/drivers"/>
-<element path="/template/drivers/bsp"/>
-<element path="/template/drivers/stm32f0xx_hal_driver"/>
-<element path="/template/inc"/>
-<element path="/template/src"/>
-</expanded>
-<selection>
-<element path="/template/src/main.c"/>
-</selection>
-</viewState>
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0"/>
 </view>
 <view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
 <viewState/>
@@ -132,7 +119,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.21944036" ratioLeft="298" ratioRight="1060" relationship="2" relative="org.eclipse.ui.internal.ViewStack@24655f"/>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.22237197" ratioLeft="165" ratioRight="577" relationship="2" relative="org.eclipse.ui.internal.ViewStack@24655f"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@b6bb33" ratio="0.7198113" ratioLeft="763" ratioRight="297" relationship="2" relative="org.coocox.builder.ui.exampleView">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
@@ -432,11 +419,6 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.welcome.ui.WelcomePage" name="" tooltip="">
-<persistable>
-<org.coocox.welcome.ui.WelcomePage/>
-</persistable>
-</file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="math.h" tooltip="C:\CooCox\gcc-arm-none-eabi-5_3-2016q1\arm-none-eabi\include\math.h">
 <persistable path="C:\CooCox\gcc-arm-none-eabi-5_3-2016q1\arm-none-eabi\include\math.h" project="template"/>
 </file>
@@ -475,6 +457,9 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_it.c" tooltip="template/src/stm32f0xx_it.c">
 <persistable path="/template/src/stm32f0xx_it.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_hal_msp.c" tooltip="template/src/stm32f0xx_hal_msp.c">
+<persistable path="/template/src/stm32f0xx_hal_msp.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_hal_msp.c" tooltip="template/src/stm32f0xx_hal_msp.c">
 <persistable path="/template/src/stm32f0xx_hal_msp.c"/>

@@ -53,7 +53,7 @@ uint32_t g_ADCValue2;
 uint32_t g_ADCValue3;
 uint32_t g_Flag;
 
-#define ZERO_AMP	3040
+#define ZERO_AMP	3400//3040
 float g_ConvAmp;
 float g_ConvVolt;
 float g_ConvTemp;
@@ -104,7 +104,7 @@ int main(void)
 
 	/* Configura TIM1 */
 	TimHandle.Instance = TIM3;
-	TimHandle.Init.Period            = 5000 - 1;
+	TimHandle.Init.Period            = 1000 - 1;//5000 - 1;
 	TimHandle.Init.Prescaler         = uwPrescalerValue;
 	TimHandle.Init.ClockDivision     = 0;
 	TimHandle.Init.CounterMode       = TIM_COUNTERMODE_UP;
@@ -276,21 +276,17 @@ int main(void)
 
 			//Transmissão de dados
 			{
+#if 0
 				//Limpa a Tela
-				limpaTela(18);
+				limpaTela(20);
 
 				//Inicializa a tela de Status
 				strcpy(statusString,"Leitura do Sistema:\r\n");
 
 				//Concatena Valores de Corrente
 				strcat(statusString,"Corrente:\t");
-				ConcatFloat(g_ConvAmp, statusString, 2);
+				ConcatFloat(g_ConvAmp, statusString, 4);
 				strcat(statusString,"A\r\n");
-
-				//Concatena Valores de Corrente
-				strcat(statusString,"ADC CORRENTE:\t");
-				ConcatFloat(g_ADCValue1, statusString, 0);
-				strcat(statusString,"\r\n");
 
 				//Concatena Valores de Tensão
 				strcat(statusString,"Tensao:\t");
@@ -301,7 +297,13 @@ int main(void)
 				strcat(statusString,"Temp:\t");
 				ConcatFloat(g_ConvTemp, statusString, 2);
 				strcat(statusString,"oC\r\n");
-
+#endif
+#if 1
+				//Concatena Valores de Corrente
+				strcpy(statusString,"ADC:\t");
+				ConcatFloat(g_ADCValue1-2000, statusString, 0);
+				strcat(statusString,"\r\n");
+#endif
 				//Imprime na Serial
 				sendSerial((uint8_t*)statusString);
 			}

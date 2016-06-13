@@ -155,10 +155,10 @@
     <File name="drivers/stm32f0xx_hal_driver/inc/stm32f0xx_hal_dma_ex.h" path="drivers/stm32f0xx_hal_driver/inc/stm32f0xx_hal_dma_ex.h" type="1"/>
     <File name="drivers/cmsis/device/stm32f030x8.h" path="drivers/cmsis/device/stm32f030x8.h" type="1"/>
     <File name="drivers/cmsis/lib/ARM/arm_cortexM3l_math.lib" path="drivers/cmsis/lib/ARM/arm_cortexM3l_math.lib" type="1"/>
-    <File name="drivers/cmsis/lib/ARM/arm_cortexM4b_math.lib" path="drivers/cmsis/lib/ARM/arm_cortexM4b_math.lib" type="1"/>
-    <File name="drivers/stm32f0xx_hal_driver/inc/stm32f0xx_hal_i2c_ex.h" path="drivers/stm32f0xx_hal_driver/inc/stm32f0xx_hal_i2c_ex.h" type="1"/>
     <File name="drivers/cmsis/include/arm_common_tables.h" path="drivers/cmsis/include/arm_common_tables.h" type="1"/>
+    <File name="drivers/stm32f0xx_hal_driver/inc/stm32f0xx_hal_i2c_ex.h" path="drivers/stm32f0xx_hal_driver/inc/stm32f0xx_hal_i2c_ex.h" type="1"/>
     <File name="drivers/stm32f0xx_hal_driver/src/stm32f0xx_hal_tsc.c" path="drivers/stm32f0xx_hal_driver/src/stm32f0xx_hal_tsc.c" type="1"/>
+    <File name="drivers/cmsis/lib/ARM/arm_cortexM4b_math.lib" path="drivers/cmsis/lib/ARM/arm_cortexM4b_math.lib" type="1"/>
     <File name="drivers/stm32f0xx_hal_driver/inc/stm32f0xx_hal_irda.h" path="drivers/stm32f0xx_hal_driver/inc/stm32f0xx_hal_irda.h" type="1"/>
     <File name="drivers/stm32f0xx_hal_driver/inc/stm32f0xx_hal_dac_ex.h" path="drivers/stm32f0xx_hal_driver/inc/stm32f0xx_hal_dac_ex.h" type="1"/>
     <File name="src/system_stm32f0xx.c" path="src/system_stm32f0xx.c" type="1"/>
